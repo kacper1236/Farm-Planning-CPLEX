@@ -1,0 +1,47 @@
+/*********************************************
+ * OPL 22.1.1.0 Data
+ * Author: Rogal
+ * Creation Date: 11 kwi 2024 at 10:29:24
+ *********************************************/
+
+NbOfLands = 4;
+Years = 5;
+MaxAge = 12;
+
+InitialCows = [10 10 10 10 10 10 10 10 10 10 10 10];
+HeifSurvival = 0.95;
+CowSurvival = 0.98;
+CalfRate = 1.1;
+HeifFraction = 0.50;
+InitialCap = 130;
+GrainPerCow = 0.6;
+SugarbeetPerCow = 0.7;
+GrainPerAcre = [1.1 0.9 0.8 0.65];
+GrainAcre = [20 30 20 10];
+SugarbeetPerAcre = 1.5;
+HeifAcre = 0.6666667;
+CowAcre = 1.0;
+Acres = 200;
+HeifLabor = 0.1;
+CowLabor = 0.42;
+Labor = 55;
+GrainLabor = 0.04;
+SugarbeetLabor = 0.14;
+DownCowChange = 0.50;
+UpCowChange = 0.75;
+BullockSellPrice = 30;
+HeifSellPrice = 40;
+CowSellPrice = 120;
+MilkPerCowPrice = 370;
+GrainSellPrice = 75;
+SugarbeetSellPrice = 58;
+GrainBuyPrice = 90;
+SugarbeetBuyPrice = 70;
+LaborFixCost = 4000;
+LaborCost = 120;
+HeifCost = 50;
+CowCost = 100;
+GrainGrowCost = 15;
+SugarbeetGrowCost = 10;
+LoanTerm = 10;
+Repay = 39.71;
