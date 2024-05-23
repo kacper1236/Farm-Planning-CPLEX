@@ -7,13 +7,13 @@ int main() {
 	IloEnv env;
 	try {
 		IloOplErrorHandler handler(env, cout);
-		IloOplModelSource model(env, "C:\\Users\\kacpe\\Desktop\\optymalizacja\\projekt\\projekt.mod");
+		IloOplModelSource model(env, "path\\to\\file\\projekt.mod"); //Need to edit
 		IloOplSettings settings(env, handler);
 		settings.setWithWarnings(IloFalse);
 		IloOplModelDefinition def(model, settings);
 		IloCplex cplex(env);
 		IloOplModel opl(def, cplex);
-		IloOplDataSource data(env, "C:\\Users\\kacpe\\Desktop\\optymalizacja\\projekt\\projekt.dat");
+		IloOplDataSource data(env, "path\\to\\file\\projekt.dat");  //Need to edit
 		
 		opl.addDataSource(data);
 		opl.generate();
@@ -23,7 +23,7 @@ int main() {
 				<< endl;
 			opl.postProcess();
 			opl.printSolution(cout);
-			cplex.writeSolution("C:\\Users\\kacpe\\Desktop\\optymalizacja\\projekt\\rozwiazanie.sol");
+			cplex.writeSolution("path\\to\\file\\rozwiazanie.sol");  //Need to edit
 		}
 		else {
 			cout << "No solution!" << endl;
